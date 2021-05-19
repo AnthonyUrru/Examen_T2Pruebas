@@ -1,0 +1,15 @@
+﻿<h2>@ViewBag.Tema.Nombre</h2>
+<h4>Editar Pregunta</h4>
+
+<form action="/Pregunta/Editar?id=@Model.Id" method="post">
+    
+    <input type="hidden" name="TemaId" value="@Model.TemaId" />
+    
+    <div class="form-group">
+        <label>Descripción</label>
+        <textarea class="form-control" name="Descripcion">@Model.Descripcion</textarea>
+        @Html.ValidationMessage("Descripcion")
+    </div>
+    <button class="btn btn-primary">Guardar</button>
+    <a class="btn btn-link" href="/Pregunta/Index?temaId=@ViewBag.Tema.Id">Cancelar</a>
+</form>

@@ -1,0 +1,53 @@
+﻿@using CalidadT2.Constantes;
+@model List<CalidadT2.Models.Biblioteca>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 id="Titulo">Mi Biblioteca</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Libro</th>
+            <th>Autor</th>
+            <th>Estado</th>
+            <th></th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        @foreach(var item in Model)
+        {
+        <tr>
+            <td>@item.Libro.Nombre</td>
+            <td>@item.Libro.Autor.Nombres</td>
+            <td>
+                @if (item.Estado == ESTADO.POR_LEER)
+                {
+                    <span>Por LEER</span>
+                }
+                @if (item.Estado == ESTADO.LEYENDO)
+                {
+                    <span>LEYENDO</span>
+                }
+                @if (item.Estado == ESTADO.TERMINADO)
+                {
+                    <span>TERMINADO</span>
+                }
+            </td>    
+            <td>
+                @if (item.Estado == ESTADO.POR_LEER)
+                {
+                    <a href="/biblioteca/MarcarComoLeyendo?libroId=@item.LibroId">Leyendo</a>
+                }
+                @if (item.Estado == ESTADO.LEYENDO)
+                {
+                    <a href="/biblioteca/MarcarComoTerminado?libroId=@item.LibroId">Terminado</a>
+                }                
+            </td>    
+            </tr>
+        }
+    </tbody>
+</table>
+

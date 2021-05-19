@@ -1,0 +1,79 @@
+﻿
+
+<h2>@ViewBag.Tema.Nombre</h2>
+<h4>Crear Pregunta</h4>
+
+<form action="/Pregunta/Crear?temaId=@ViewBag.Tema.Id" method="post">
+
+    <div class="form-group">
+        <label>Pregunta</label>
+        <textarea class="form-control" name="Descripcion">@Model.Descripcion</textarea>
+        <input type="checkbox" name="Hello" value="World" />
+        @Html.ValidationMessage("Descripcion")
+    </div>
+    <div class="form-group">
+        <label>Alternativas</label>
+        @*<div class="row">
+            <div class="col-11">
+                <input class="form-control" id="inputAlternative" type="text" value="" />
+            </div>
+            <div class="col-1">
+                <a href="#" id="btnAddAlternativa" class="btn btn-success">Añadir</a>
+            </div>
+        </div>*@
+        <br />     
+        
+        @Html.ValidationMessage("Alternativas")
+        <table class="table table-condensed" id="tableAlternativas">
+            @{ var index = 0; }
+            @foreach (var item in Model.Alternativas)
+            {
+                <tr>
+                    <td>
+                        <input type="text" class="form-contro" name="Alternativas[@index].Descripcion" value="@item.Descripcion">
+                    </td>
+                    <td>
+                        <input type="checkbox" name="Alternativas[@index].EsCorrecto" value="true" @(item.EsCorrecto ? "checked": "") />
+                        <input type="hidden" name="Alternativas[@index].EsCorrecto" value="false"> ¿Es Correcta?
+                    </td>
+                </tr>
+                index++;
+            }
+
+         
+            
+        </table>
+        <a href="#" id="btnAddAlternativa" class="btn btn-success">Añadir</a>
+    </div>
+
+    <button class="btn btn-primary">Guardar</button>
+    <a class="btn btn-link" href="/Pregunta/Index?temaId=@ViewBag.Tema.Id">Cancelar</a>
+</form>
+
+<script>
+    var index = $("#tableAlternativas").find("tr").length;
+
+    $("#btnAddAlternativa").click(function (event) {
+        event.preventDefault();
+
+        var inputAlternativa = $("#inputAlternative");
+
+        var row = `<tr>
+                <td>
+                    <input type="text" class="form-control" name="Alternativas[${index}].Descripcion">
+                </td>
+                <td>
+                    <input type="checkbox" name="Alternativas[${index}].EsCorrecto" value="true" />
+                    <input type="hidden" name="Alternativas[${index}].EsCorrecto" value="false"> ¿Es Correcta?
+                </td>
+            </tr>`;
+
+        $("#tableAlternativas").append(row);
+        
+        inputAlternativa.val("");
+        index++;
+
+        
+    });
+
+</script>

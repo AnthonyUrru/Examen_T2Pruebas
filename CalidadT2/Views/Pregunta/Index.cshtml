@@ -1,0 +1,45 @@
+﻿
+<h2>Tema: @Model.Nombre</h2>
+<h4>Preguntas</h4>
+
+<a class="btn btn-primary float-right" href="/Pregunta/Crear?temaId=@Model.Id">Crear Pregunta</a>
+<a class="btn btn-link float-right" href="/Tema">Ir a Temas</a>
+
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Pregunta</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @{ var index = 1; }
+        @foreach (var item in Model.Preguntas)
+        {
+            <tr>
+                <td><strong>@index</strong></td>
+                <td><strong>@item.Descripcion</strong></td>
+                <td class="text-right">
+                    <a href="/Pregunta/Editar?id=@item.Id">Editar</a> |
+                    <a href="/Pregunta/Eliminar?id=@item.Id">Eliminar</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <ul>
+                        @foreach (var alt in item.Alternativas)
+                        {
+                            <li>
+                                @alt.Descripcion @if (alt.EsCorrecto) { <strong>(X)</strong> }
+                            </li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+            index++;
+        }
+    </tbody>
+
+</table>

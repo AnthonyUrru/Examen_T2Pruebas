@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "DarExamen";
+}
+
+<h2>DarExamen</h2>
+
+
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Pregunta</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @{ var index = 1; }
+        @foreach (var item in Model.Preguntas)
+        {
+            <tr>
+                <td><strong>@index</strong></td>
+                <td><strong>@item.Pregunta.Descripcion</strong></td>
+                
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <ul>
+                        @foreach (var alt in item.Pregunta.Alternativas)
+                        {
+                            <li>
+                                @alt.Descripcion                               
+                            </li>
+                        }
+                    </ul>
+                </td>
+            </tr>
+            index++;
+        }
+    </tbody>
+
+</table>
+

@@ -1,0 +1,167 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2_Tests\\CalidadT2_Tests.csproj": {}
+  },
+  "projects": {
+    "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2\\CalidadT2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2\\CalidadT2.csproj",
+        "projectName": "CalidadT2",
+        "projectPath": "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2\\CalidadT2.csproj",
+        "packagesPath": "C:\\Users\\Anthony\\.nuget\\packages\\",
+        "outputPath": "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Anthony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.6, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2_Tests\\CalidadT2_Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2_Tests\\CalidadT2_Tests.csproj",
+        "projectName": "CalidadT2_Tests",
+        "projectPath": "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2_Tests\\CalidadT2_Tests.csproj",
+        "packagesPath": "C:\\Users\\Anthony\\.nuget\\packages\\",
+        "outputPath": "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2_Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Anthony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2\\CalidadT2.csproj": {
+                "projectPath": "D:\\Trabajos Anthony\\Calidad y pruebas\\Examen T2\\CalidadT2-master\\CalidadT2\\CalidadT2.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.16.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.16.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

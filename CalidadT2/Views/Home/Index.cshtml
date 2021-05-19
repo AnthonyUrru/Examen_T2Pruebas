@@ -1,0 +1,61 @@
+﻿@model List<CalidadT2.Models.Libro>
+@{
+    ViewBag.Title = "Home Page";
+}
+<div id="Add_B"class="container">
+    @if(TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+    <span id="APP_PAGE"></span>
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Libros</h2>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <!-- Carousel indicators -->
+               
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                        <div class="row">
+                            @foreach (var item in Model)
+                            {
+                                <div class="col-sm-3 text-center my-5">
+                                    <div class="thumb-wrapper">
+                                        <div class="img-box">
+                                            <a href="/Libro/Details?id=@item.Id">
+                                                <img src="@Url.Content("~" + item.Imagen)" class="img-responsive img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="thumb-content">
+                                            <h5>@item.Nombre</h5>
+                                            <h5>@item.Autor.Nombres</h5>
+                                            <div class="star-rating">
+                                                <ul class="list-inline">
+                                                    @for (var i = 0; i < item.Puntaje; i++)
+                                                    {
+                                                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                                    }
+                                                    @for (var i = 0; i < 5 - item.Puntaje; i++)
+                                                    {
+                                                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                            <a href="/biblioteca/add?libro=@item.Id" class="btn btn-primary">Agregar a biblioteca</a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            }
+
+                        </div>
+                    </div>                   
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>

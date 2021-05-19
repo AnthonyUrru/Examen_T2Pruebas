@@ -1,0 +1,409 @@
+{
+  "id": "e6f7828f-a592-474d-acc9-1954696d21c9",
+  "version": "2.0",
+  "name": "BibliotecaUPN_Test",
+  "url": "https://localhost:44320/",
+  "tests": [{
+    "id": "125186da-e2ba-42c4-b818-7c11f96657f3",
+    "name": "Lista_LibrosCorrecta",
+    "commands": [{
+      "id": "0d4d431a-ec54-4836-bcb8-8a40b6223fab",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44320/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10e9f123-54fb-472b-be75-a315412e4b5f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x920",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91c7ea88-a502-490c-a9d4-ebb7d6bf860f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-3:nth-child(1) .img-responsive",
+      "targets": [
+        ["css=.col-sm-3:nth-child(1) .img-responsive", "css:finder"],
+        ["xpath=//div[@id='myCarousel']/div/div/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a326ccb-4fb9-41b5-97b1-1fa39b643e47",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CalidadT2",
+      "targets": [
+        ["linkText=CalidadT2", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'CalidadT2')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'CalidadT2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3414dfdb-e030-4d25-a70c-29338765ddfa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-3:nth-child(2) .img-responsive",
+      "targets": [
+        ["css=.col-sm-3:nth-child(2) .img-responsive", "css:finder"],
+        ["xpath=//div[@id='myCarousel']/div/div/div/div[2]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e4e5796-eddf-47dd-9bed-2ff73538a432",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CalidadT2",
+      "targets": [
+        ["linkText=CalidadT2", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'CalidadT2')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'CalidadT2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74832983-fac2-4445-8d5c-288fefd30ae6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-3:nth-child(3) .img-responsive",
+      "targets": [
+        ["css=.col-sm-3:nth-child(3) .img-responsive", "css:finder"],
+        ["xpath=//div[@id='myCarousel']/div/div/div/div[3]/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4055ed71-020e-465c-8aa0-f8e72490c33d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=CalidadT2",
+      "targets": [
+        ["linkText=CalidadT2", "linkText"],
+        ["css=.navbar-brand", "css:finder"],
+        ["xpath=//a[contains(text(),'CalidadT2')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'CalidadT2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f481b85c-3709-4a9d-af4a-542946c130f9",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ec8f0fc4-6574-4a1f-880c-8fff911e90bc",
+    "name": "Login_Correcto",
+    "commands": [{
+      "id": "11ef791a-5f17-4038-9e31-83ee78859d3d",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44320/Auth/Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35f1ab27-f4ac-4dd3-9a04-36281d0df868",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x920",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4af3fb3-92e1-42f6-82a4-9692eefc6316",
+      "comment": "",
+      "command": "click",
+      "target": "name=Username",
+      "targets": [
+        ["name=Username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f10f39f4-85ef-4da2-be84-4b073ef901be",
+      "comment": "",
+      "command": "type",
+      "target": "name=Username",
+      "targets": [
+        ["name=Username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Anthony"
+    }, {
+      "id": "c199c303-83c3-4d1a-9071-fa99d588df31",
+      "comment": "",
+      "command": "click",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68b0eb76-c654-4e50-a472-ebca1d09e2cd",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "e0a66943-d20d-46ee-9226-d7631052429e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8193b3ce-88a8-4e28-93b9-1b625b32dbef",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f6dc0b04-67bf-4fc2-8baf-69c793e74c76",
+    "name": "Login_Incorrecto",
+    "commands": [{
+      "id": "8d0c130a-c6c8-445f-8478-636ae99adb0d",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44320/Auth/Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9cdfaedb-5c25-43a6-b25c-571e07b71b6b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x920",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "780d594f-acfa-4eab-9aec-4030ab008883",
+      "comment": "",
+      "command": "click",
+      "target": "name=Username",
+      "targets": [
+        ["name=Username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fc4ac89-638b-415a-a67e-00c1df138258",
+      "comment": "",
+      "command": "type",
+      "target": "name=Username",
+      "targets": [
+        ["name=Username", "name"],
+        ["css=.form-group:nth-child(1) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Anthony"
+    }, {
+      "id": "8155f0bc-5398-4d66-836a-ff3a212f976a",
+      "comment": "",
+      "command": "type",
+      "target": "name=Password",
+      "targets": [
+        ["name=Password", "name"],
+        ["css=.form-group:nth-child(2) > .form-control", "css:finder"],
+        ["xpath=//input[@name='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123000"
+    }, {
+      "id": "fd920ffe-32f6-4cb0-ad3f-494fa22177f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn",
+      "targets": [
+        ["css=.btn", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Iniciar Sesión')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4181f44d-193e-4ec9-bd4f-7f0aaa85f980",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=AuthMessage",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb21618f-55f3-460d-8183-0fb40e8847a7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8409a646-cd57-4fa8-b489-d6c03fcbfe85",
+    "name": "Index_BlibliotecaCorrecto",
+    "commands": [{
+      "id": "3d931ab3-ba80-4b38-9e1f-eac5798c7d91",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44320/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8054b6f0-4286-4269-8778-3fe24d368cff",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x920",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f52eb88-fd3e-475d-a0df-7b920b722981",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mi Biblioteca",
+      "targets": [
+        ["linkText=Mi Biblioteca", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Mi Biblioteca')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/Biblioteca')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Mi Biblioteca')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3af0455a-d757-444f-9f9e-4cef6a59a3f1",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=Titulo",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a9aee4c-4e11-41ba-8e3a-8ea091c7b504",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1a3d827a-e163-4ca7-9cdc-bdc9b178e1a8",
+    "name": "Libro_Detalle",
+    "commands": [{
+      "id": "fb7ed09e-5406-4ace-9b60-d542fcfbde3e",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44320/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe3030d4-809e-498c-8cdd-b9aa575403db",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x920",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e0d8e79-3bce-46af-88b0-fce8128bf7c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-3:nth-child(1) .img-responsive",
+      "targets": [
+        ["css=.col-sm-3:nth-child(1) .img-responsive", "css:finder"],
+        ["xpath=//div[@id='myCarousel']/div/div/div/div/div/div/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80b15751-988d-4c03-8888-b90c0fd25ace",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=Description_Present",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1bc36a8-1cc2-498c-b67e-1517bf1dc8ac",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7cad10cb-abb3-4295-b884-95994ed7c7c3",
+    "name": "AñadirLibroBiblioteca_Correcto",
+    "commands": [{
+      "id": "e34d39de-f322-49d9-928c-ff0b23f87267",
+      "comment": "",
+      "command": "open",
+      "target": "https://localhost:44320/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "947c66b4-6a01-46ed-9de9-7e591dac1130",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "968x920",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "edf5645e-cb18-4cf0-869f-1ea468e5dfc6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Agregar a biblioteca",
+      "targets": [
+        ["linkText=Agregar a biblioteca", "linkText"],
+        ["css=.col-sm-3:nth-child(1) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Agregar a biblioteca')]", "xpath:link"],
+        ["xpath=//div[@id='myCarousel']/div/div/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/biblioteca/add?libro=1')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Agregar a biblioteca')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3edeb5a9-93af-449f-a784-b4d2f90be03d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=Add_B",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7048be44-77ab-4f11-a3d0-03792232b5e6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://localhost:44320/"],
+  "plugins": []
+}

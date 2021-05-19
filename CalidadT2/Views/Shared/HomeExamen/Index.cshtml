@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tema</th>
+                <th>Categoria</th>
+                <th>Fecha de Creacion</th>
+                
+                <th>Usuario</th>
+                                        
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var examen in Model)
+            {
+                <tr>
+                    <td>@examen.Tema.Nombre</td>
+                    <td>
+                        @foreach(var categoria in examen.Tema.Categorias)
+                        {
+                            <span class="badge badge-primary">@categoria.Categoria.Nombre</span>
+                        }
+                    </td>
+                    <td>@examen.FechaCreacion</td>
+                    <td>@examen.Usuario.Nombres</td>
+                    <td><a href="/HomeExamen/Confirmar?ExamenId=@examen.Id" class="btn btn-dark">Tomar Examen</a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

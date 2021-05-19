@@ -1,0 +1,31 @@
+﻿
+<h2>Examenes</h2>
+
+<a class="btn btn-primary float-right" href="/Examen/Crear">Crear Examen</a>
+
+<table class="table table-borderless">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Tema</th>
+            <th>Fecha de creacion</th>
+            <th>Nro de Preguntas</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @{ var index = 1; }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@index</td>
+                <td>@item.Tema.Nombre</td>
+                <td>@string.Format("{0:d}", item.FechaCreacion)</td>
+                <td>@item.Preguntas.Count</td>               
+            </tr>
+          
+            index++;
+        }
+    </tbody>
+
+</table>
